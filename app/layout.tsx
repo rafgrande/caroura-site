@@ -1,6 +1,8 @@
 // These styles apply to every route in the application
 import Footer from './components/footer';
 import Header from './components/header';
+import '@fortawesome/fontawesome-svg-core/styles.css'
+
 import './globals.css';
 
 export const metadata = {
@@ -20,7 +22,7 @@ export default function RootLayout({
         <main className='grow'>
         {children}
         </main>
-        <Footer/>
+        
       </body>
     </html>
   )
