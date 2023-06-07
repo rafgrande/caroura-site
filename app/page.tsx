@@ -8,8 +8,9 @@ export default function Home() {
   return (
     <main>
         <Filter/>
-        <div className="hidden">
+        
         <Brands />
+        <div className="hidden">
         <Showcase />
         <Highlights/>
         <Showcase />
