@@ -6,12 +6,15 @@ import Showcase from "./components/showcase";
 
 export default function Home() {
   return (
-    <main className="hidden">
+    <main>
         <Filter/>
+        <div className="hidden">
         <Brands />
         <Showcase />
         <Highlights/>
         <Showcase />
+        </div>
+        
     </main>
   )
 }
