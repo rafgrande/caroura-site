@@ -1,28 +1,23 @@
 const Highlights = () => (
-    <section className="highlights p-4 mb-2 mx-4 flex justify-center">
-        <div className="highlights-content">
-            <div className="highlights-content flex gap-4">
-                <div className="border-orange-400 border-2 p-1 rounded-full">
-                    <div className="flex justify-center items-center w-24 h-24 rounded-full bg-orange-400 p-2 text-center text-white">Gol</div>
+    <>
+        <section className='py-2 relative border-b border-b-orange-400 overflow-hidden lg:max-w-3xl lg:m-auto'>
+            <div className="noscroll overflow-scroll snap-x touch-pan-x snap-center flex text-sm font-bold lg:justify-center gap-2">
+                <div className="border-orange-400 border-2 p-1 rounded-full basis-24 h-24 shrink-0">
+                    <div className="flex justify-center items-center rounded-full bg-orange-400 p-2 text-center text-white w-full h-full">Gol</div>
                 </div>
-                <div className="border-orange-400 border-2 p-1 rounded-full">
-                    <div className="flex justify-center items-center w-24 h-24 rounded-full bg-orange-400 p-2 text-center text-white">Tucson</div>
+                <div className="border-orange-400 border-2 p-1 rounded-full basis-24 h-24 shrink-0">
+                    <div className="flex justify-center items-center rounded-full bg-orange-400 p-2 text-center text-white  w-full h-full">Gol</div>
                 </div>
-                <div className="border-orange-400 border-2 p-1 rounded-full">
-                    <div className="flex justify-center items-center w-24 h-24 rounded-full bg-orange-400 p-2 text-center text-white">HB 20</div>
+                <div className="border-orange-400 border-2 p-1 rounded-full basis-24 h-24 shrink-0">
+                    <div className="flex justify-center items-center rounded-full bg-orange-400 p-2 text-center text-white  w-full h-full">Gol</div>
                 </div>
-                <div className="border-orange-400 border-2 p-1 rounded-full">
-                    <div className="flex justify-center items-center w-24 h-24 rounded-full bg-orange-400 p-2 text-center text-white">Tucson</div>
-                </div>
-                <div className="border-orange-400 border-2 p-1 rounded-full">
-                    <div className="flex justify-center items-center w-24 h-24 rounded-full bg-orange-400 p-2 text-center text-white">HB 20</div>
-                </div>
-                <div className="border-orange-400 border-2 p-1 rounded-full">
-                    <div className="flex justify-center items-center w-24 h-24 rounded-full bg-orange-400 p-2 text-center text-white">Até R$50 mil</div>
+                <div className="border-orange-400 border-2 p-1 rounded-full basis-24 h-24 shrink-0">
+                    <div className="flex justify-center items-center rounded-full bg-orange-400 p-2 text-center text-white  w-full h-full">Gol</div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </>
+   
 )
 
 export default Highlights;
