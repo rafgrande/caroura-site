@@ -10,8 +10,8 @@ export default function Home() {
         <Filter/>
         
         <Brands />
-        <div className="hidden">
         <Showcase />
+        <div className="hidden">
         <Highlights/>
         <Showcase />
         </div>
