@@ -11,7 +11,7 @@ const Showcase = () => (
                 <span className='text-xs underline'>Veja mais</span>
             </div>
             
-            <div className="noscroll overflow-scroll snap-x touch-pan-x snap-center flex text-sm font-bold lg:justify-center">
+            <div className="noscroll overflow-scroll snap-x flex text-sm font-bold lg:justify-center">
                 <div className="showcase-item basis-[65vw] shrink-0 border border-transparent hover:border-orange-400 p-2 snap-center lg:w-auto lg:basis-auto lg:shrink">
                     <div className='relative'>
                         <Image
