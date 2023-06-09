@@ -22,7 +22,7 @@ export default function RootLayout({
         <main className='grow'>
         {children}
         </main>
-        
+        <Footer/>
       </body>
     </html>
   )
