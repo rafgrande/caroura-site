@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       transitionProperty: {
         'max-height': 'max-height',
+        'left': 'left'
       },
     },
   },
