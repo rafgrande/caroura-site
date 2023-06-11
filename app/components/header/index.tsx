@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCarSide, faMotorcycle, faCircleUser } from '@fortawesome/free-solid-svg-icons'
+import { faCarSide, faMotorcycle, faCircleUser, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 
 const Header = () => (
     <>
@@ -9,7 +9,8 @@ const Header = () => (
             <FontAwesomeIcon icon={faCarSide} className='p-1 text-xl text-orange-400 bg-white rounded-full'/>
             <FontAwesomeIcon icon={faMotorcycle} className='p-1  text-xl'/>
         </div>
-        <div className='text-2xl flex w-1/5 justify-end'>
+        <div className='text-2xl flex w-1/5 justify-end gap-2 items-center'>
+            <FontAwesomeIcon icon={faMagnifyingGlass}/>
             <FontAwesomeIcon icon={faCircleUser} className='border border-white p-1 rounded-full'/>
         </div>
     </header>

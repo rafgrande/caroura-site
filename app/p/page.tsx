@@ -1,22 +1,37 @@
 import Image from "next/image";
 import profilePic from '../components/img/tuc.jpg';
 import Showcase from "../components/showcase";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHouse } from "@fortawesome/free-solid-svg-icons";
 
 export default function Product() {
     return (
-        <main className="px-4">
-            <section className="breadcrumb py-2">
-                {'Home > Carro > Huyndai > Tucson 2.6 - 2011'}  
+        <main>
+            <section className="breadcrumb p-2 flex gap-2 items-center">
+                <FontAwesomeIcon icon={faHouse} />
+                <span>Carro</span>
+                <span>Hyundai</span>
+                <span>Tucson 2.6 - 2011</span> 
             </section>
-            <section className="w-full overflow-hidden">
-                <section className="flex">
-                    <Image src={profilePic} alt='Tucson' width={450} />
-                    <Image src={profilePic} alt='Tucson' width={450} />
-                    <Image src={profilePic} alt='Tucson' width={450} />
-                    <Image src={profilePic} alt='Tucson' width={450} />
-                    <Image src={profilePic} alt='Tucson' width={450} />
+            <section className="flex justify-center">
+                <Image src={profilePic} alt='Tucson' width={650}/>
+            </section>
+
+                <section className="noscroll overflow-scroll snap-x flex max-w-5xl m-auto">
+                    <div className=" basis-[27vw] shrink-0 snap-center lg:w-20 lg:basis-auto lg:shrink">
+                        <Image src={profilePic} alt='Tucson' width={450}/>
+                    </div>
+                    <div className=" basis-[27vw] shrink-0 snap-center lg:w-20 lg:basis-auto lg:shrink">
+                        <Image src={profilePic} alt='Tucson' width={450}/>
+                    </div>
+                    <div className=" basis-[27vw] shrink-0 snap-center lg:w-20 lg:basis-auto lg:shrink">
+                        <Image src={profilePic} alt='Tucson' width={450}/>
+                    </div>
+                    <div className=" basis-[27vw] shrink-0 snap-center lg:w-20 lg:basis-auto lg:shrink">
+                        <Image src={profilePic} alt='Tucson' width={450}/>
+                    </div>
                 </section>
-                <section className="flex flex-col gap-4 py-2 max-w-5xl m-auto">
+                <section className="flex flex-col gap-4 p-2 max-w-5xl m-auto">
                     <div className="flex items-end gap-2">
                         <div className="text-4xl font-bold">Tucson 2.6</div>
                         <div className="text-lg">2009 - Huyndai</div>
@@ -40,14 +55,13 @@ export default function Product() {
                         <div>Veiculo em otimo estado, com poucas avarias</div>
                     </section>
                     <div className="text-3xl font-bold mt-4">R$ 20.000,00</div>
-
                     <form className="flex flex-col gap-2 justify-center items-center">
                         <textarea name="msg" className="w-full border border-orange-400"></textarea>
                         <input className="bg-orange-400 text-white font-bold p-2 rounded-md" type="submit" value={"Enviar"}/>
                     </form>
                 </section>
                 <Showcase />
-            </section>
+
         </main>
     )
   }
