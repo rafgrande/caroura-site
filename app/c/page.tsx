@@ -21,9 +21,9 @@ export default function Category() {
     return (
       <>
         <main className="px-2">
-          <section className={`absolute top-0 ${isOpenFilter ? "left-0" : "-left-full"} h-screen w-screen bg-black/75 z-30 flex flex-row-reverse justify-between transition-left duration-1000 ease-in-out`}>
+          <section className={`absolute top-0 ${isOpenFilter ? "left-0" : "-left-full"} h-screen w-screen bg-black/75 z-30 flex flex-row-reverse justify-between`}>
             <FontAwesomeIcon icon={faXmark} className="text-white p-5 text-xl" onClick={closeFilters}/>
-            <div className="w-4/5 bg-white h-screen">
+            <div className={`relative w-4/5 bg-white h-screen transition-left duration-500 ease-in-out ${isOpenFilter ? "left-0" : "-left-full"}`}>
             <section className="min-w-max my-2">
             <form className="results-prodcts-filter w-full"> 
               <div className="opt-filter pb-2">
