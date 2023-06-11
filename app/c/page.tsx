@@ -5,6 +5,7 @@ import Image from "next/image";
 import profilePic from '../components/img/tuc.jpg';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse, faSliders, faXmark } from "@fortawesome/free-solid-svg-icons";
+import Filter from "../components/filter";
 
 export default function Category() {
 
@@ -21,6 +22,7 @@ export default function Category() {
     return (
       <>
         <main className="px-2">
+        <Filter/>
           <section className={`absolute top-0 ${isOpenFilter ? "left-0" : "-left-full"} h-screen w-screen bg-black/75 z-30 flex flex-row-reverse justify-between`}>
             <FontAwesomeIcon icon={faXmark} className="text-white p-5 text-xl" onClick={closeFilters}/>
             <div className={`relative w-4/5 bg-white h-screen transition-left duration-500 ease-in-out ${isOpenFilter ? "left-0" : "-left-full"}`}>
@@ -158,9 +160,17 @@ export default function Category() {
             <span>Hyundai</span>
             <span>Tucson</span> 
           </section>
-          <section className="text-lg font-bold">Tucson</section>
-          <section onClick={openFilters}>
-            <FontAwesomeIcon icon={faSliders} className="text-lg"/>
+          <section className="text-2xl font-bold mb-2">Tucson</section>
+          <section className="flex justify-between items-center mb-2">
+            <div onClick={openFilters}>
+              <FontAwesomeIcon icon={faSliders} className="text-lg"/>
+            </div>
+            <div>
+              <select className="block w-full border-0">
+                <option>Menor preço</option>
+                <option>Maior preço</option>
+              </select>
+            </div>
           </section>
           <section className="results-prodcts-filter grow flex flex-wrap">
               <div className="showcase-item border border-transparent hover:border-orange-400 p-2 w-1/2 lg:w-1/4 ">
