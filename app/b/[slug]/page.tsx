@@ -22,7 +22,7 @@ export default function Category() {
     return (
         <main className="px-2">
         <Filter/>
-          <section className={`fixed top-0 ${isOpenFilter ? "left-0" : "-left-full"} h-screen w-screen bg-black/75 z-30 flex flex-row-reverse justify-between`}>
+          <section className={`fixed top-0 ${isOpenFilter ? "left-0" : "-left-[100vw]"} h-screen w-screen bg-black/75 z-30 flex flex-row-reverse justify-between`}>
             <FontAwesomeIcon icon={faXmark} className="text-white p-5 text-xl" onClick={closeFilters}/>
             <div className={`relative p-2 w-4/5 lg:w-1/4 bg-white h-screen transition-left duration-500 ease-in-out ${isOpenFilter ? "left-0" : "-left-full"}`}>
             <section className="min-w-max my-2">
