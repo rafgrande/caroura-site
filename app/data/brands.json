@@ -1,0 +1,38 @@
+[
+    {
+        "name":  "Chevrolet",
+        "slug": "/b/chevrolet"
+    },
+    {
+        "name":  "Fiat",
+        "slug": "/b/fiat"
+    },
+    {
+        "name":  "Volkswagen",
+        "slug": "/b/volkswagen"
+    },
+    {
+        "name":  "Hyundai",
+        "slug": "/b/hyundai"
+    },
+    {
+        "name":  "Toyota",
+        "slug": "/b/toyota"
+    },
+    {
+        "name":  "Jeep",
+        "slug": "/b/jeep"
+    },
+    {
+        "name":  "Renault",
+        "slug": "/b/renault"
+    },
+    {
+        "name":  "Honda",
+        "slug": "/b/honda"
+    },
+    {
+        "name":  "Nissan",
+        "slug": "/b/nissan"
+    }
+]

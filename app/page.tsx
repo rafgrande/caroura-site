@@ -13,7 +13,7 @@ export default function Home() {
         <Showcase />
         <Highlights/>
         <Showcase />  
-        <div className="p-2 h-14 relative">
+        <div className="p-2 h-14 relative max-w-[970px] lg:h-20 m-auto">
           <Image src={banner} alt='banner' fill={true} />
         </div>     
     </main>

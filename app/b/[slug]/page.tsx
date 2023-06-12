@@ -2,10 +2,10 @@
 import { useState } from "react";
 
 import Image from "next/image";
-import profilePic from '../components/img/tuc.jpg';
+import profilePic from '../../components/img/tuc.jpg';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse, faSliders, faXmark } from "@fortawesome/free-solid-svg-icons";
-import Filter from "../components/filter";
+import Filter from "../../components/filter";
 
 export default function Category() {
 

@@ -1,0 +1,68 @@
+[
+    {
+        "name": "Melhores Ofertas",
+        "id": 1,
+        "products": [
+            {
+                "id":1,
+                "brand": "Hyundai",
+                "imgUrl": "tuc.jpg",
+                "motor":"2.6",
+                "model": "Tucson 6v",
+                "price": "R$ 20.000,00",
+                "seller": "Rafael",
+                "year": "2011",
+                "flags": [
+                    {
+                        "name": "Automático"
+                    },
+                    {
+                        "name": "Vidros Eletricos"
+                    }
+                ]
+            },
+            {
+                "id":2,
+                "brand": "Renault",
+                "imgUrl": "tuc.jpg",
+                "model": "Clio",
+                "motor": "1.6",
+                "price": "R$ 15.000,00",
+                "seller": "Felipe",
+                "year": "2017",
+                "flags": [
+                    {
+                        "name": "Travas eletricas"
+                    }
+                ]
+            },
+            {
+                "id":3,
+                "brand": "Fiat",
+                "imgUrl": "tuc.jpg",
+                "model": "Palio",
+                "price": "R$ 18.000,00",
+                "seller": "Eduardo",
+                "year": "2009",
+                "flags": null
+            },
+            {
+                "id":4,
+                "brand": "Volkswagen",
+                "imgUrl": "tuc.jpg",
+                "model": "Gol",
+                "price": "R$ 14.000,00",
+                "seller": "Rafael",
+                "year": "2014",
+                "flags": [
+                    {
+                        "name": "Kit Gás"
+                    },
+                    {
+                        "name": "Vidros Eletricos"
+                    }
+                ]
+            }
+        ]
+    }
+]

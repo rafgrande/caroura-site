@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Automáticos",
+        "slug": "/s/automáticos"
+    },
+    {
+        "name": "Semi-novos",
+        "slug": "/s/semi-novos"
+    },
+    {
+        "name": "Até 50 mil",
+        "slug": "/s/50_mil"
+    },
+    {
+        "name": "Até 100 mil",
+        "slug": "/s/100_mil"
+    },
+    {
+        "name": "Importados",
+        "slug": "/s/Importados"
+    }
+]

@@ -3,10 +3,12 @@ import profilePic from '../components/img/tuc.jpg';
 import Showcase from "../components/showcase";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse } from "@fortawesome/free-solid-svg-icons";
+import Filter from "../components/filter";
 
 export default function Product() {
     return (
         <main>
+            <Filter />
             <section className="breadcrumb p-2 flex gap-2 items-center">
                 <FontAwesomeIcon icon={faHouse} />
                 <span>Carro</span>
