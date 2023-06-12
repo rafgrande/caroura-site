@@ -14,8 +14,8 @@ const Showcase = () => {
                 <div className="noscroll overflow-scroll snap-x flex text-sm font-bold lg:justify-center">
                     
                     {
-                        showcaseData[0].products.map(p => 
-                            <div className="showcase-item basis-[65vw] shrink-0 border border-transparent hover:border-orange-400 p-2 snap-center lg:w-auto lg:basis-auto lg:shrink">
+                        showcaseData[0].products.map((p, i) => 
+                            <div key={i} className="showcase-item basis-[65vw] shrink-0 border border-transparent hover:border-orange-400 p-2 snap-center lg:w-auto lg:basis-auto lg:shrink">
                             <div className='relative'>
                                 <Image
                                     src={profilePic}
