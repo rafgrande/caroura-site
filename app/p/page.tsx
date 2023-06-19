@@ -1,5 +1,4 @@
 import Image from "next/image";
-import profilePic from '../components/img/tuc.jpg';
 import Showcase from "../components/showcase";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse } from "@fortawesome/free-solid-svg-icons";
@@ -16,21 +15,21 @@ export default function Product() {
                 <span>Tucson 2.6 - 2011</span> 
             </section>
             <section className="flex justify-center">
-                <Image src={profilePic} alt='Tucson' width={650}/>
+                <Image src='/sand.jpg' alt='Tucson' height={450} width={650}/>
             </section>
 
                 <section className="noscroll overflow-scroll snap-x flex max-w-5xl m-auto">
                     <div className=" basis-[27vw] shrink-0 snap-center lg:w-20 lg:basis-auto lg:shrink">
-                        <Image src={profilePic} alt='Tucson' width={450}/>
+                        <Image src='/sand.jpg' alt='Tucson' width={450} height={300}/>
                     </div>
                     <div className=" basis-[27vw] shrink-0 snap-center lg:w-20 lg:basis-auto lg:shrink">
-                        <Image src={profilePic} alt='Tucson' width={450}/>
+                        <Image src='/sand.jpg' alt='Tucson' width={450} height={300}/>
                     </div>
                     <div className=" basis-[27vw] shrink-0 snap-center lg:w-20 lg:basis-auto lg:shrink">
-                        <Image src={profilePic} alt='Tucson' width={450}/>
+                        <Image src='/sand.jpg' alt='Tucson' width={450} height={300}/>
                     </div>
                     <div className=" basis-[27vw] shrink-0 snap-center lg:w-20 lg:basis-auto lg:shrink">
-                        <Image src={profilePic} alt='Tucson' width={450}/>
+                        <Image src='/sand.jpg' alt='Tucson' width={450} height={300}/>
                     </div>
                 </section>
                 <section className="flex flex-col gap-4 p-2 max-w-5xl m-auto">
