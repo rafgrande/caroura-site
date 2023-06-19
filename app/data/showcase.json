@@ -8,13 +8,13 @@
                 "brand": "Hyundai",
                 "imgUrl": "tuc.jpg",
                 "motor":"2.6",
-                "model": "Tucson 6v",
+                "model": "Tucson 2.7 MPFI 24V 175cv Aut.",
                 "price": "R$ 20.000,00",
                 "seller": "Rafael",
-                "year": "2011",
+                "year": "2019",
                 "flags": [
                     {
-                        "name": "Automático"
+                        "name": "2019"
                     },
                     {
                         "name": "Vidros Eletricos"
@@ -24,39 +24,43 @@
             {
                 "id":2,
                 "brand": "Renault",
-                "imgUrl": "tuc.jpg",
-                "model": "Clio",
+                "imgUrl": "sand.jpg",
+                "model": "SANDERO Authentique Hi-Power 1.0 16V 5p",
                 "motor": "1.6",
                 "price": "R$ 15.000,00",
                 "seller": "Felipe",
                 "year": "2017",
                 "flags": [
                     {
-                        "name": "Travas eletricas"
+                        "name": "2017"
                     }
                 ]
             },
             {
                 "id":3,
                 "brand": "Fiat",
-                "imgUrl": "tuc.jpg",
-                "model": "Palio",
+                "imgUrl": "palio.jfif",
+                "model": "Palio 1.0 ECONOMY Fire Flex 8V 2p",
                 "price": "R$ 18.000,00",
                 "seller": "Eduardo",
                 "year": "2009",
-                "flags": null
+                "flags": [
+                    {
+                        "name": "2009"
+                    }
+                ]
             },
             {
                 "id":4,
                 "brand": "Volkswagen",
-                "imgUrl": "tuc.jpg",
-                "model": "Gol",
+                "imgUrl": "gol.webp",
+                "model": "Gol 1.0 Flex 12V 5p",
                 "price": "R$ 14.000,00",
                 "seller": "Rafael",
                 "year": "2014",
                 "flags": [
                     {
-                        "name": "Kit Gás"
+                        "name": "2014"
                     },
                     {
                         "name": "Vidros Eletricos"

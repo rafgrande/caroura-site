@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import profilePic from '../img/tuc.jpg';
 
 import showcaseData from '../../data/showcase.json'
 
@@ -15,12 +14,13 @@ const Showcase = () => {
                     
                     {
                         showcaseData[0].products.map((p, i) => 
-                            <div key={i} className="showcase-item basis-[65vw] shrink-0 border border-transparent hover:border-orange-400 p-2 snap-center lg:w-auto lg:basis-auto lg:shrink">
-                            <div className='relative'>
+                            <div key={i} className="showcase-item basis-[65vw] shrink-0 border border-transparent hover:border-orange-400 p-2 snap-center lg:w-1/4 lg:basis-auto lg:shrink">
+                            <div className='relative h-36 flex justify-center items-center mb-2'>
                                 <Image
-                                    src={profilePic}
+                                    src={`/${p.imgUrl}`}
                                     alt='Tucson'
                                     width={200}
+                                    height={125}
                                     priority={true}
                                 />
                                 <div className='absolute top-0 right-0 flex gap-1 flex-col items-end'>
@@ -31,7 +31,7 @@ const Showcase = () => {
                                     }
                                 </div>
                             </div>
-                            <div className='text-lg'>{`${p.model} - ${p.year}`}</div>
+                            <div className=' h-14 overflow-hidden'>{`${p.model}`}</div>
                             <div className='text-sm'>{p.brand}</div>
                             <div>{p.seller}</div>
                             <div className='text-xl font-bold'>{p.price}</div>

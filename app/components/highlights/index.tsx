@@ -6,7 +6,7 @@ const Highlights = () => (
             <div className="noscroll overflow-scroll snap-x flex text-xs lg:text-sm lg:font-bold lg:justify-center">
                 {
                   highlightsData.map((h,i) => (
-                    <div key={i} className="border-orange-400 border-2 p-1 rounded-full basis-24 h-24 shrink-0 snap-center m-1">
+                    <div key={i} className="border-orange-400 border-2 p-1 rounded-full basis-24 h-24 shrink-0 snap-center m-1 lg:basis-28 lg:h-28">
                         <div className="flex justify-center items-center rounded-full bg-orange-400 p-2 text-center text-white w-full h-full">{h.name}</div>
                     </div>
                   ))  

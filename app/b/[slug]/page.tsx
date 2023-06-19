@@ -2,12 +2,21 @@
 import { useState } from "react";
 
 import Image from "next/image";
-import profilePic from '../../components/img/tuc.jpg';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse, faSliders, faXmark } from "@fortawesome/free-solid-svg-icons";
 import Filter from "../../components/filter";
 
-export default function Category() {
+import brandsData from "../../data/allBrands.json";
+
+export default function Category( {params}: any ) {
+
+  const {slug} = params;
+
+  const getBrand = brandsData.filter(b => {
+    return slug === b.id
+  })
+
+  const [brand] = getBrand;
 
   const [isOpenFilter, setIsOpenFilter] = useState(false);
 
@@ -159,7 +168,7 @@ export default function Category() {
             <span>Hyundai</span>
             <span>Tucson</span> 
           </section>
-          <section className="text-2xl font-bold mb-2">Tucson</section>
+          <section className="text-2xl font-bold mb-2">{brand.name}</section>
           <section className="flex justify-between items-center mb-2">
             <div onClick={openFilters}>
               <FontAwesomeIcon icon={faSliders} className="text-lg"/>
@@ -174,7 +183,14 @@ export default function Category() {
           <section className="results-prodcts-filter grow flex flex-wrap">
               <div className="showcase-item border border-transparent hover:border-orange-400 p-2 w-1/2 lg:w-1/4 ">
                 <div className='relative'>
-                  <Image src={profilePic} alt='Tucson' width={200} className="m-auto"/>
+                  <Image 
+                    src='/sand.jpg' 
+                    alt='Tucson' 
+                    width={200}
+                    height={125}
+                    priority={true} 
+                    className="m-auto"
+                  />
                   <div className='absolute top-0 right-0 flex gap-1 flex-col items-end'>
                     <div className='text-xs bg-orange-400 text-white p-1 rounded-md text-center opacity-75'>Direção eletrica</div>
                     <div className='text-xs bg-orange-400 text-white p-1 rounded-md text-center opacity-75'>Freio ABS</div>
@@ -188,7 +204,14 @@ export default function Category() {
               </div>
               <div className="showcase-item border border-transparent hover:border-orange-400 p-2 w-1/2 lg:w-1/4 ">
                 <div className='relative'>
-                  <Image src={profilePic} alt='Tucson' width={200} className="m-auto"/>
+                  <Image 
+                    src='/sand.jpg' 
+                    alt='Tucson' 
+                    width={200}
+                    height={125}
+                    priority={true} 
+                    className="m-auto"
+                  />
                   <div className='absolute top-0 right-0 flex gap-1 flex-col items-end'>
                     <div className='text-xs bg-orange-400 text-white p-1 rounded-md text-center opacity-75'>Direção eletrica</div>
                     <div className='text-xs bg-orange-400 text-white p-1 rounded-md text-center opacity-75'>Freio ABS</div>
@@ -202,7 +225,14 @@ export default function Category() {
               </div>
               <div className="showcase-item border border-transparent hover:border-orange-400 p-2 w-1/2 lg:w-1/4 ">
                 <div className='relative'>
-                  <Image src={profilePic} alt='Tucson' width={200} className="m-auto"/>
+                  <Image 
+                    src='/sand.jpg' 
+                    alt='Tucson' 
+                    width={200}
+                    height={125}
+                    priority={true} 
+                    className="m-auto"
+                  />
                   <div className='absolute top-0 right-0 flex gap-1 flex-col items-end'>
                     <div className='text-xs bg-orange-400 text-white p-1 rounded-md text-center opacity-75'>Direção eletrica</div>
                     <div className='text-xs bg-orange-400 text-white p-1 rounded-md text-center opacity-75'>Freio ABS</div>
@@ -216,7 +246,14 @@ export default function Category() {
               </div>
               <div className="showcase-item border border-transparent hover:border-orange-400 p-2 w-1/2 lg:w-1/4 ">
                 <div className='relative'>
-                  <Image src={profilePic} alt='Tucson' width={200} className="m-auto"/>
+                  <Image 
+                    src='/sand.jpg' 
+                    alt='Tucson' 
+                    width={200}
+                    height={125}
+                    priority={true} 
+                    className="m-auto"
+                  />
                   <div className='absolute top-0 right-0 flex gap-1 flex-col items-end'>
                     <div className='text-xs bg-orange-400 text-white p-1 rounded-md text-center opacity-75'>Direção eletrica</div>
                     <div className='text-xs bg-orange-400 text-white p-1 rounded-md text-center opacity-75'>Freio ABS</div>
@@ -230,7 +267,14 @@ export default function Category() {
               </div>
               <div className="showcase-item border border-transparent hover:border-orange-400 p-2 w-1/2 lg:w-1/4 ">
                 <div className='relative'>
-                  <Image src={profilePic} alt='Tucson' width={200} className="m-auto"/>
+                  <Image 
+                    src='/sand.jpg' 
+                    alt='Tucson' 
+                    width={200}
+                    height={125}
+                    priority={true} 
+                    className="m-auto"
+                  />
                   <div className='absolute top-0 right-0 flex gap-1 flex-col items-end'>
                     <div className='text-xs bg-orange-400 text-white p-1 rounded-md text-center opacity-75'>Direção eletrica</div>
                     <div className='text-xs bg-orange-400 text-white p-1 rounded-md text-center opacity-75'>Freio ABS</div>
@@ -244,7 +288,14 @@ export default function Category() {
               </div>
               <div className="showcase-item border border-transparent hover:border-orange-400 p-2 w-1/2 lg:w-1/4 ">
                 <div className='relative'>
-                  <Image src={profilePic} alt='Tucson' width={200} className="m-auto"/>
+                  <Image 
+                    src='/sand.jpg' 
+                    alt='Tucson' 
+                    width={200}
+                    height={125}
+                    priority={true} 
+                    className="m-auto"
+                  />
                   <div className='absolute top-0 right-0 flex gap-1 flex-col items-end'>
                     <div className='text-xs bg-orange-400 text-white p-1 rounded-md text-center opacity-75'>Direção eletrica</div>
                     <div className='text-xs bg-orange-400 text-white p-1 rounded-md text-center opacity-75'>Freio ABS</div>
@@ -258,7 +309,14 @@ export default function Category() {
               </div>
               <div className="showcase-item border border-transparent hover:border-orange-400 p-2 w-1/2 lg:w-1/4 ">
                 <div className='relative'>
-                  <Image src={profilePic} alt='Tucson' width={200} className="m-auto"/>
+                  <Image 
+                    src='/sand.jpg' 
+                    alt='Tucson' 
+                    width={200}
+                    height={125}
+                    priority={true} 
+                    className="m-auto"
+                  />
                   <div className='absolute top-0 right-0 flex gap-1 flex-col items-end'>
                     <div className='text-xs bg-orange-400 text-white p-1 rounded-md text-center opacity-75'>Direção eletrica</div>
                     <div className='text-xs bg-orange-400 text-white p-1 rounded-md text-center opacity-75'>Freio ABS</div>
@@ -272,7 +330,14 @@ export default function Category() {
               </div>
               <div className="showcase-item border border-transparent hover:border-orange-400 p-2 w-1/2 lg:w-1/4 ">
                 <div className='relative'>
-                  <Image src={profilePic} alt='Tucson' width={200} className="m-auto"/>
+                  <Image 
+                    src='/sand.jpg' 
+                    alt='Tucson' 
+                    width={200}
+                    height={125}
+                    priority={true} 
+                    className="m-auto"
+                  />
                   <div className='absolute top-0 right-0 flex gap-1 flex-col items-end'>
                     <div className='text-xs bg-orange-400 text-white p-1 rounded-md text-center opacity-75'>Direção eletrica</div>
                     <div className='text-xs bg-orange-400 text-white p-1 rounded-md text-center opacity-75'>Freio ABS</div>
@@ -286,7 +351,14 @@ export default function Category() {
               </div>
               <div className="showcase-item border border-transparent hover:border-orange-400 p-2 w-1/2 lg:w-1/4 ">
                 <div className='relative'>
-                  <Image src={profilePic} alt='Tucson' width={200} className="m-auto"/>
+                  <Image 
+                    src='/sand.jpg' 
+                    alt='Tucson' 
+                    width={200}
+                    height={125}
+                    priority={true} 
+                    className="m-auto"
+                  />
                   <div className='absolute top-0 right-0 flex gap-1 flex-col items-end'>
                     <div className='text-xs bg-orange-400 text-white p-1 rounded-md text-center opacity-75'>Direção eletrica</div>
                     <div className='text-xs bg-orange-400 text-white p-1 rounded-md text-center opacity-75'>Freio ABS</div>
@@ -300,7 +372,14 @@ export default function Category() {
               </div>
               <div className="showcase-item border border-transparent hover:border-orange-400 p-2 w-1/2 lg:w-1/4 ">
                 <div className='relative'>
-                  <Image src={profilePic} alt='Tucson' width={200} className="m-auto"/>
+                  <Image 
+                    src='/sand.jpg' 
+                    alt='Tucson' 
+                    width={200}
+                    height={125}
+                    priority={true} 
+                    className="m-auto"
+                  />
                   <div className='absolute top-0 right-0 flex gap-1 flex-col items-end'>
                     <div className='text-xs bg-orange-400 text-white p-1 rounded-md text-center opacity-75'>Direção eletrica</div>
                     <div className='text-xs bg-orange-400 text-white p-1 rounded-md text-center opacity-75'>Freio ABS</div>
@@ -314,7 +393,14 @@ export default function Category() {
               </div>
               <div className="showcase-item border border-transparent hover:border-orange-400 p-2 w-1/2 lg:w-1/4 ">
                 <div className='relative'>
-                  <Image src={profilePic} alt='Tucson' width={200} className="m-auto"/>
+                  <Image 
+                    src='/sand.jpg' 
+                    alt='Tucson' 
+                    width={200}
+                    height={125}
+                    priority={true} 
+                    className="m-auto"
+                  />
                   <div className='absolute top-0 right-0 flex gap-1 flex-col items-end'>
                     <div className='text-xs bg-orange-400 text-white p-1 rounded-md text-center opacity-75'>Direção eletrica</div>
                     <div className='text-xs bg-orange-400 text-white p-1 rounded-md text-center opacity-75'>Freio ABS</div>
@@ -328,7 +414,14 @@ export default function Category() {
               </div>
               <div className="showcase-item border border-transparent hover:border-orange-400 p-2 w-1/2 lg:w-1/4 ">
                 <div className='relative'>
-                  <Image src={profilePic} alt='Tucson' width={200} className="m-auto"/>
+                  <Image 
+                    src='/sand.jpg' 
+                    alt='Tucson' 
+                    width={200}
+                    height={125}
+                    priority={true} 
+                    className="m-auto"
+                  />
                   <div className='absolute top-0 right-0 flex gap-1 flex-col items-end'>
                     <div className='text-xs bg-orange-400 text-white p-1 rounded-md text-center opacity-75'>Direção eletrica</div>
                     <div className='text-xs bg-orange-400 text-white p-1 rounded-md text-center opacity-75'>Freio ABS</div>
@@ -342,7 +435,14 @@ export default function Category() {
               </div>
               <div className="showcase-item border border-transparent hover:border-orange-400 p-2 w-1/2 lg:w-1/4 ">
                 <div className='relative'>
-                  <Image src={profilePic} alt='Tucson' width={200} className="m-auto"/>
+                  <Image 
+                    src='/sand.jpg' 
+                    alt='Tucson' 
+                    width={200}
+                    height={125}
+                    priority={true} 
+                    className="m-auto"
+                  />
                   <div className='absolute top-0 right-0 flex gap-1 flex-col items-end'>
                     <div className='text-xs bg-orange-400 text-white p-1 rounded-md text-center opacity-75'>Direção eletrica</div>
                     <div className='text-xs bg-orange-400 text-white p-1 rounded-md text-center opacity-75'>Freio ABS</div>

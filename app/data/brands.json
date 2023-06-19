@@ -1,37 +1,46 @@
 [
     {
+        "id": "chevrolet",
         "name":  "Chevrolet",
         "slug": "/b/chevrolet"
     },
     {
+        "id": "fiat",
         "name":  "Fiat",
         "slug": "/b/fiat"
     },
     {
+        "id": "volkswagen",
         "name":  "Volkswagen",
         "slug": "/b/volkswagen"
     },
     {
+        "id":"hyundai",
         "name":  "Hyundai",
         "slug": "/b/hyundai"
     },
     {
+        "id":"toyota",
         "name":  "Toyota",
         "slug": "/b/toyota"
     },
     {
+        "id":"jeep",
         "name":  "Jeep",
         "slug": "/b/jeep"
     },
     {
+        "id":"renault",
         "name":  "Renault",
         "slug": "/b/renault"
     },
     {
+        "id":"honda",
         "name":  "Honda",
         "slug": "/b/honda"
     },
     {
+        "id":"nissan",
         "name":  "Nissan",
         "slug": "/b/nissan"
     }

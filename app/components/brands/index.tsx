@@ -11,7 +11,9 @@ const Brands = () => {
                         </div>
                     ))
                  }   
-                    
+                <div className="p-2 text-center snap-center lg:w-auto hover:text-white hover:bg-orange-400 rounded-md">
+                    <a href="/marcas">Ver Todas</a>
+                </div> 
             </div>
         </section>
     )
